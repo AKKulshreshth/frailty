@@ -1,0 +1,287 @@
+{ The model has 20 (6750) variables (array expansion in parens).
+  In this module and 0 additional modules with 0 sectors.
+  Stocks: 1 (816) Flows: 5 (4080) Converters: 14 (1854)
+  Constants: 7 (1029) Equations: 12 (4905) Graphicals: 0 (0)  }
+
+Resident_Population:
+resident_population[race, gender, age](t) = resident_population[race, gender, age](t - dt) + (births[race, gender, age] + ageing_in[race, gender, age] + net_inmigration[race, gender, age] - deaths[race, gender, age] - ageing_out[race, gender, age]) * dt {NON-NEGATIVE}
+    INIT resident_population[race, gender, age] = 0
+    UNITS: People
+    INFLOWS:
+        births[*, *, NewBorn] = fecund_female_population[race]*gender_proportion_of_babies[gender]*fertility_rate[race] {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age00] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age01] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age02] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age03] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age04] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age05] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age06] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age07] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age08] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age09] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age10] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age11] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age12] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age13] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age14] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age15] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age16] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age17] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age18] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age19] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age20] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age21] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age22] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age23] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age24] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age25] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age26] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age27] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age28] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age29] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age30] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age31] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age32] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age33] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age34] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age35] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age36] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age37] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age38] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age39] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age40] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age41] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age42] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age43] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age44] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age45] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age46] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age47] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age48] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age49] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age50] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age51] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age52] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age53] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age54] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age55] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age56] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age57] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age58] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age59] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age60] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age61] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age62] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age63] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age64] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age65] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age66] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age67] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age68] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age69] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age70] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age71] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age72] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age73] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age74] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age75] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age76] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age77] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age78] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age79] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age80] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age81] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age82] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age83] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age84] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age85] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age86] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age87] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age88] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age89] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age90] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age91] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age92] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age93] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age94] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age95] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age96] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age97] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age98] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age99] = 0 {UNIFLOW}
+            UNITS: People/Years
+        births[*, *, Age100andOver] = 0 {UNIFLOW}
+            UNITS: People/Years
+        ageing_in[*, *, *] = (  IF (age = age.Age100andOver) THEN ageing_out[race, gender, age]   ELSE IF (age = 1) THEN 0   ELSE ageing_out[race, gender, (age - 1)])/cohort_length {UNIFLOW}
+            UNITS: People/Years
+        net_inmigration[race, gender, age] = migration_scaling_factor*unadjusted_migration {UNIFLOW}
+            UNITS: People/Years
+    OUTFLOWS:
+        deaths[*, *, *] = resident_population*"age-specific_baseline_mortality_rate"[gender,age] {UNIFLOW}
+            OUTFLOW PRIORITY: 1
+            UNITS: People/Years
+        ageing_out[*, *, *] = one_by_year*resident_population/cohort_length {UNIFLOW}
+            OUTFLOW PRIORITY: 2
+            UNITS: People/Years
+"age-specific_baseline_mortality_rate"[gender, age] = 0
+    UNITS: Dimensionless/Year
+    DOCUMENT: From Singapore census. See working in "Population working.xlsx".
+    
+    Current version based on parameters till 2022, needs updating.
+cohort_length = 1
+    UNITS: Dimensionless
+fecund_female_population[Chinese] = SUM(resident_population[Chinese,female,17:51])
+    UNITS: People
+fecund_female_population[Malay] = SUM(resident_population[Malay,female,17:51])
+    UNITS: People
+fecund_female_population[Indian] = SUM(resident_population[Indian,female,17:51])
+    UNITS: People
+fecund_female_population[Other] = SUM(resident_population[Other,female,17:51])
+    UNITS: People
+fertility_rate[race] = 0
+    UNITS: Dimensionless/Year
+    DOCUMENT: From Singapore census. See working in "Population working.xlsx".
+    
+    Current version based on parameters till 2022, needs updating.
+gender_proportion_of_babies[gender] = 0
+    UNITS: Dimensionless
+    DOCUMENT: From Singapore census. See working in "Population working.xlsx".
+    
+    Current version based on parameters till 2022, needs updating.
+migration_scaling_factor = (target_total_resident_population/total_resident_population)^3
+    UNITS: Dimensionless
+    DOCUMENT: Assumed total population is never 0.
+    
+    This is a synthetic formula that accelerates the volume of migration in proportion to cube of ratio of target to actual total resident population, while the split of migration by race and gender is in line with existing population.
+    
+    To be calibrated.
+    
+    Version v0O:
+    IF TIME <= 2025
+    
+    THEN 1.00
+    
+    ELSE
+net_migration_rate[race, gender, age] = 0
+    UNITS: Dimensionless/Year
+    DOCUMENT: From Singapore census. See working in "Population working.xlsx".
+    
+    Current version based on parameters till 2022, needs updating.
+one_by_year = 1
+    UNITS: Dimensionless/Year
+target_total_resident_population = 0
+    UNITS: People
+    DOCUMENT: From Singapore census. See working in "Population working.xlsx".
+    
+    Current version based on parameters till 2022, needs updating.
+total_births = SUM(births)
+    UNITS: People/Years
+total_deaths = SUM(deaths)
+    UNITS: People/Years
+total_migration = SUM(net_inmigration)
+    UNITS: People/Years
+total_resident_population = SUM(resident_population)
+    UNITS: People
+unadjusted_migration[race, gender, age] = resident_population*net_migration_rate
+    UNITS: People/Years
+
